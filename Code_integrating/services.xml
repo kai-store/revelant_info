@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<manifest>
+  <project name="metrics" path="services/metrics"/>
+  <project name="rust-toolchain" path="prebuilts/rust"/>
+  <project name="api-daemon" path="services/api-daemon"/>
+  <project name="ads-sdk" path="services/ads-sdk"/>
+</manifest>

@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<manifest>
+
+  <remote fetch="https://github.com/apitrace/" name="apitrace"/>
+  <remote fetch="ssh://git@git.kaiostech.com/pier/" name="pier"/>
+
+  <default remote="pier" revision="refs/tags/kaios_jio_pier_2_5_20190118_VoWIFI"/>
+
+  <!-- KaiOS specific things -->
+  <project name="gaia" path="gaia"/>
+  <project name="gonk-misc" path="gonk-misc"/>
+  <project name="platform_system_bluetoothd" path="system/bluetoothd"/>
+  <project name="fake-libdvm" path="dalvik"/>
+  <project name="librecovery" path="librecovery"/>
+  <project name="moztt" path="external/moztt"/>
+  <project name="rilproxy" path="rilproxy"/>
+  <project name="valgrind" path="external/valgrind"/>
+  <project name="vex" path="external/VEX"/>
+  <project name="platform_hardware_libhardware_moz" path="hardware/libhardware_moz"/>
+  <project name="apitrace" path="external/apitrace" remote="apitrace" revision="master"/>
+  <project name="platform_system_libfdio" path="system/libfdio"/>
+  <project name="platform_system_libpdu" path="system/libpdu"/>
+  <project name="platform_system_mmitest" path="system/mmitest"/>
+  <project name="platform_system_nfcd" path="system/nfcd" revision="sec"/>
+
+  <!-- apps  -->
+  <project name="mmitest" path="apps/mmitest"/>
+  <project name="engmode" path="apps/engmode"/>
+  <project name="logmanager" path="apps/logmanager"/>
+  <project name="kaios-plus.kaiostech.com" path="apps/kaios-plus.kaiostech.com"/>
+
+  <!-- prebuilt library for KaiOS  -->
+  <project name="platform_external_librt9" path="external/librt9"/>
+
+  <!-- Dongle -->
+  <project name="platform_external_boringssl" path="external/boringssl"/>
+
+  <include name="services.xml"/>
+</manifest>
